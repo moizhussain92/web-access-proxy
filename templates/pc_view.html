@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<div class = "caption-full">
+<head>
+    <title>Blocked Sites</title>
+    <link rel= "stylesheet" type= "text/css" href= "style_mine.css">
+    <meta http-equiv= "refresh" content= 3>
+</head>
+<body>
+    <div id= "header">
+        <h1>Blocked Sites</h1>
+    </div>
+    <div id= "nav_fetch">
+        <font color="cyan" <a href= "/templates/pc_home2.html">Home</a></font>
+        <font color="cyan" <a href= "/templates/Block">Block</a></font>
+        <font color="cyan" <a href= "/templates/remove">Remove</a></font> 
+        <font color="cyan" <a href= "/templates/pc_renew.html">Subscription</font></a>
+    </div>
+    <div id="section">
+    <h3>This is the list of blocked sites: </h3>
+        <ul>
+            {% for l in blocked %}
+                <li>{{ l }}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>

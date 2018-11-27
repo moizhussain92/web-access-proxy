@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<div class = "caption-full">
+<head>
+    <title>Remove Blocking</title>
+    <link rel="stylesheet" type="text/css" href="style_mine.css">
+    <meta http-equiv= "refresh" content=3>
+    <input type="hidden" name="alignment" value="{{interval_add}}" />
+</head>
+<body>
+    <div id= "header">
+        <h1>Block Control</h1>
+    </div>
+    <div id= "nav_fetch">
+        <font color="cyan"<a href= "pc_home.html">Home</a></font>
+        <font color="cyan"<a href= "/templates/view">View</a></font>
+        <font color="cyan"<a href= "/templates/Block">Block</a></font>
+        <font color="cyan"<a href= "/templates/pc_renew.html">Subscription</a></font>
+    </div>
+
+    <div id= "section">
+    <form name="f1" method="post" action="/templates/remove" id="f1">
+        <table>
+            <tr>
+                <td class="f1_label">Remove Site:</td><td><input type="text" name="Remove" value="" />
+                </td>
+            </tr>
+                <td>
+                    <input type="submit" value="Remove" style="font-size:18px; " />
+                </td>
+
+            <tr>
+            {{ message }}
+            </tr>
+    </div>
+
+
+    </form>
+
+
+</div>
+</body>
+</html>

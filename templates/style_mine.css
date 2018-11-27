@@ -1,0 +1,36 @@
+body
+    {
+    background-image: url("background.jpg")
+    }
+#header{
+    background-color: #243581;
+    color:silver;
+    text-align:center;
+    font-family:Broadway;
+    font-size:20px;
+    width:100%;
+    }
+
+#section{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align:left;
+    font-size:20px;
+    height:700px;
+    font-family:Arial;
+    color:black;
+    float:left;
+    }
+#nav_fetch{
+    text-align:center;
+    font-size:30px;
+    font-family:Cooper;
+    line-height:35px;
+    color:black;
+    background-color:white;
+    height:21px;
+    width:100%;
+    padding-bottom: 3%;
+    word-spacing:50px;
+    float:left;
+    }

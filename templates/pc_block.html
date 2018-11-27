@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<div class = "caption-full">
+<head>
+    <title>Blocking</title>
+    <link rel="stylesheet" type="text/css" href="style_mine.css">
+    <meta http-equiv= "refresh" content= 3>
+    <input type="hidden" name="alignment" value="{{interval_add}}" />
+</head>
+<body>
+    <div id= "header">
+        <h1>Block Control</h1>
+    </div>
+    <div id= "nav_fetch">
+        <font color="cyan" <a href= "/templates/pc_home2.html">Home</a></font> 
+        <font color="cyan" <a href= "/templates/view">View</a> </font> 
+        <font color="cyan" <a href= "/templates/remove">Remove</a></font>
+        <font color="cyan" <a href= "/templates/pc_renew.html">Subscription</a></font>
+    </div>
+    <div id= "section">
+        <form name="f1" method="post" action="/templates/Block" id="f1">
+        <table>
+            <tr>
+                <td class="f1_label">Add Site:</td><td><input type="text" name="Add" value="" />
+                </td>
+            </tr>
+                <td>
+                    <input type="submit" value="Add" style="font-size:18px; " />
+                </td>
+        </form>
+        {{message}}
+        <ul>
+            {% for l in blocked %}
+                <li>{{ l }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+</body>
+</html>
